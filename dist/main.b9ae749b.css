@@ -1,0 +1,23 @@
+@import "styles.css";
+@import "reset.css";
+@import "fonts.css";
+@roboto "Roboto", sans-serif;
+.work__container {
+  max-width: 1510px;
+  margin: 0 auto;
+}
+.work__map {
+  display: grid;
+  grid-template: repeat(3, minmax(auto, 1fr)) / repeat(4, 1fr);
+}
+@media (max-width: 800px) {
+  .work__map {
+    grid-template: repeat(3, minmax(auto, 1fr)) / repeat(2, 1fr);
+  }
+}
+.work__map-card img {
+  width: 100%;
+}
+
+
+/*# sourceMappingURL=/main.b9ae749b.css.map */
