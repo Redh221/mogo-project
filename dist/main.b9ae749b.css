@@ -2,6 +2,37 @@
 @import "reset.css";
 @import "fonts.css";
 @roboto "Roboto", sans-serif;
+.header__container {
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+}
+.header__wrapper {
+  background-color: aqua;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  align-items: center;
+  width: 115%;
+  justify-content: space-around;
+}
+.header__list {
+  display: flex;
+  text-decoration: none;
+}
+.header__list li {
+  margin-left: 70px;
+}
+.header__link {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
 .work__container {
   max-width: 1510px;
   margin: 0 auto;
@@ -108,6 +139,52 @@
 }
 .banner__footer :active {
   box-shadow: 4px 4px 30px 0px #ff4343;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 
