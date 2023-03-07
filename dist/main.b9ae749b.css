@@ -23,7 +23,7 @@
   max-width: 1510px;
 }
 .banner__wrapper {
-  background-image: url("background-banner.a08a150a.png");
+  background-image: url("background-banner.28c3eb76.png");
   background-size: cover;
 }
 .banner__main {
@@ -102,6 +102,12 @@
   .banner__footer button {
     width: 80%;
   }
+}
+.banner__footer :hover {
+  background-color: #e71414;
+}
+.banner__footer :active {
+  box-shadow: 4px 4px 30px 0px #ff4343;
 }
 
 
