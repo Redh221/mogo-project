@@ -8,22 +8,72 @@
   position: fixed;
 }
 .header__wrapper {
-  background-color: aqua;
+  background-color: #b700ff;
 }
 .header__body {
   display: flex;
-  justify-content: space-between;
   min-height: 100px;
   align-items: center;
-  width: 115%;
+  width: 100%;
   justify-content: space-around;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 930px) {
+  .header__logo {
+    margin-left: 20px;
+  }
+}
+.header__burger {
+  height: 2px;
+  width: 50px;
+  background-color: #faf6f2;
+  position: relative;
+  display: none;
+}
+.header__burger:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #faf6f2;
+  bottom: 10px;
+}
+.header__burger:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #faf6f2;
+  top: 10px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-right: 20px;
 }
 .header__list {
   display: flex;
   text-decoration: none;
 }
 .header__list li {
-  margin-left: 70px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 930px) {
+  .header__list li {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .header__list li {
+    margin-left: 20px;
+  }
 }
 .header__link {
   text-decoration: none;
@@ -32,6 +82,36 @@
   line-height: 15px;
   letter-spacing: 0em;
   color: #ffffff;
+  white-space: nowrap;
+}
+@media screen and (max-width: 930px) {
+  .header__link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.header__sidebar {
+  display: none;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  z-index: 3;
+}
+.header__sidebar_active {
+  display: flex;
+}
+.header {
+  position: relative;
+}
+@media screen and (max-width: 760px) {
+  .header__menu {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
 }
 .work__container {
   max-width: 1510px;
