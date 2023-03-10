@@ -1,6 +1,6 @@
 @import "styles.css";
 @import "reset.css";
-@import "fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @roboto "Roboto", sans-serif;
 .header__container {
   margin: 0 auto;
@@ -119,11 +119,11 @@
 }
 .work__map {
   display: grid;
-  grid-template: repeat(3, minmax(auto, 1fr)) / repeat(4, 1fr);
+  grid-template: repeat(2, minmax(auto, 1fr)) / repeat(4, 1fr);
 }
 @media (max-width: 800px) {
   .work__map {
-    grid-template: repeat(3, minmax(auto, 1fr)) / repeat(2, 1fr);
+    grid-template: repeat(4, minmax(auto, 1fr)) / repeat(2, 1fr);
   }
 }
 .work__map-card img {
@@ -265,6 +265,108 @@ button,
 textarea,
 select {
   font: inherit;
+}
+.team {
+  margin: 100px 0 80px 0;
+}
+@media (max-width: 800px) {
+  .team {
+    margin: 50px 0 40px 0;
+  }
+}
+.team__container {
+  margin: 0 auto;
+  max-width: 1210px;
+}
+.team__cards {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .team__cards {
+    flex-wrap: wrap;
+  }
+}
+.team .card {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+}
+.team .card__main-title {
+  padding-top: 30px;
+}
+.team .card__main h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+@media (max-width: 1045px) {
+  .team .card__main h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 605px) {
+  .team .card__main h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.team .card__main-subtitle {
+  padding-top: 10px;
+}
+.team .card__main-subtitle h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ff4343;
+  text-transform: uppercase;
+}
+@media (max-width: 1045px) {
+  .team .card__main-subtitle h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 605px) {
+  .team .card__main-subtitle h3 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.team .card__main-description {
+  padding-top: 18px;
+}
+.team .card__main-description h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #6c7279;
+}
+@media (max-width: 1045px) {
+  .team .card__main-description h4 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 605px) {
+  .team .card__main-description h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.team .card__footer {
+  padding-top: 38px;
+  display: flex;
+}
+@media (max-width: 605px) {
+  .team .card__footer {
+    margin-bottom: 30px;
+  }
+}
+.team .card a {
+  padding-right: 10px;
 }
 
 
