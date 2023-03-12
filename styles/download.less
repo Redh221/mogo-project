@@ -1,0 +1,86 @@
+.download {
+  margin-top: 110px;
+  @media screen and (max-width: 1040px) {
+    margin-top: 77px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 38px;
+  }
+  &__container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    padding: 0 10px 30px 10px;
+    h3 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+      color: #000000;
+      @media screen and (max-width: 1040px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+  &__subtitle {
+    padding: 0 10px;
+    h5 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #000000;
+      @media screen and (max-width: 1040px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+  }
+  &__footer {
+    button {
+      width: 18%;
+      background: #ff4343;
+      height: 78px;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: white;
+      border: none;
+      margin: 50px 0 115px 0;
+      @media screen and (max-width: 1800px) {
+        width: 25%;
+      }
+      @media screen and (max-width: 1400px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 1200px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 1040px) {
+        width: 50%;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 700px) {
+        width: 80%;
+      }
+    }
+    :hover {
+      background-color: #e71414;
+      cursor: pointer;
+    }
+    :active {
+      box-shadow: 4px 4px 30px 0px #ff4343;
+    }
+  }
+}
