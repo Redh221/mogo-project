@@ -86,4 +86,25 @@
       }
     }
   }
+  &__radio {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+[id^="button"] {
+  display: none;
+}
+[id^="button"] + label {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #7e5d6f;
+  background: transparent;
+  cursor: pointer;
+  margin: 25px;
+}
+[id^="button"]:checked + label {
+  background: #7e5d6f;
 }
