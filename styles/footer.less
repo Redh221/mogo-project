@@ -1,0 +1,137 @@
+.footer {
+  &__container {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__wrapper {
+    background-color: #353c65;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    max-width: 370px;
+    padding: 0 30px 65px 30px;
+    @media screen and (max-width: 900px) {
+      max-width: 320px;
+    }
+    &-title {
+      padding: 70px 0 30px 0;
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        color: #ffffff;
+        @media screen and (max-width: 900px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+    &-description {
+      h6 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #ffffff;
+        margin: 0;
+        @media screen and (max-width: 900px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  &__mid {
+    max-width: 370px;
+    padding: 0 30px 70px 30px;
+    @media screen and (max-width: 900px) {
+      max-width: 320px;
+    }
+
+    &-title {
+      padding: 70px 0 45px 0;
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        color: #ffffff;
+        @media screen and (max-width: 900px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__right {
+    max-width: 370px;
+    padding: 0 30px 65px 30px;
+    @media screen and (max-width: 900px) {
+      max-width: 320px;
+    }
+    &-title {
+      padding: 70px 0 30px 0;
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        color: #ffffff;
+        @media screen and (max-width: 900px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+    &-description {
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #ffffff;
+        @media screen and (max-width: 900px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  &__bot {
+    background: #2c3154;
+    &-text {
+      padding: 24px 0 23px 0;
+      max-width: 370px;
+      margin: auto;
+      @media screen and (max-width: 700px) {
+        max-width: 370px;
+        padding: 24px 7px 23px 7px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #808080;
+        @media screen and (max-width: 700px) {
+          font-size: 14px;
+          line-height: 19px;
+        }
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
